@@ -1,9 +1,9 @@
-/* Arshad Muhammed */
+
 $(function() {
 
     var anim_id;
 
-    //saving dom objects to variables
+    
     var container = $('#container');
     var car = $('#car');
     var car_1 = $('#car_1');
@@ -18,14 +18,14 @@ $(function() {
     var high_score = localStorage.getItem('high_score');
     $('#high_score').text(high_score);
 
-    //saving some initial setup
+    
     var container_left = parseInt(container.css('left'));
     var container_width = parseInt(container.width());
     var container_height = parseInt(container.height());
     var car_width = parseInt(car.width());
     var car_height = parseInt(car.height());
 
-    //some other declarations
+    
     var game_over = false;
 
     var score_counter = 1;
@@ -38,7 +38,7 @@ $(function() {
     var move_up = false;
     var move_down = false;
 
-    /* ------------------------------GAME CODE STARTS HERE------------------------------------------- */
+    /* --------------------------------------------------GAME CODE STARTS HERE---------------------------------------------------------- */
 
     /* Move the cars */
     $(document).on('keydown', function(e) {
@@ -175,7 +175,7 @@ $(function() {
         $('#high_score').text(high_score);
     }
 
-    /* ------------------------------GAME CODE ENDS HERE------------------------------------------- */
+    /* ----------------------------------------------------GAME CODE ENDS HERE------------------------------------------------------------- */
 
 
     function collision($div1, $div2) {
